@@ -1,0 +1,28 @@
+{
+  "name": "js-config-parser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild src/Application.ts --tree-shaking=true --target=es2020 --bundle --minify --color=true --platform=node --outfile=dist/index.js",
+    "watch": "esbuild src/Application.ts --tree-shaking=true --target=es2020 --bundle --color=true --platform=node --watch --outfile=dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliteSchwein/js-config-parser.git"
+  },
+  "author": "eliteSCHW31N",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eliteSchwein/js-config-parser/issues"
+  },
+  "homepage": "https://github.com/eliteSchwein/js-config-parser#readme",
+  "devDependencies": {
+    "colorts": "^0.1.63",
+    "esbuild": "^0.19.5",
+    "eslint": "^8.53.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1"
+  }
+}
